@@ -17,16 +17,45 @@ code {
   background-color: grey;
 }
 .title {
-  margin-left: 30px;
+  margin-left: 40px;
 }
 .gallery {
   display: flex;
   margin: 10px;
   height: 100%;
   width: 100%;
+  margin-top: 20px;
 }
 .image {
   height: 100%;
-  width: 100%;
+  width: 70%;
   flex-wrap: wrap;
+}
+a:link {
+  text-decoration: none;
+}
+.show {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  
+}
+.subHeader {
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+.showPicture {
+  height: 15%;
+  width: 15%;
+  margin-left: 20%;
+}
+.name {
+  font-weight: bolder;
+  font-size: 40px;
+}
+.genus {
+  font-style: italic;
+}
+.status {
+  margin: 40px;
 }

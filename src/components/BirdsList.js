@@ -3,12 +3,12 @@ import React from 'react'
 function BirdsList(props) {
   return (
     <ul className='gallery'>
-        {props.birds.map(birds =>
-            <a className='image' href={'/show/' + (birds.name).replace(/\s/g, '')}>
-                <div className='image'>
-                    <img src={birds.image}></img>
-                </div>
-            </a>
+        {props.birds.map((birds, index) =>
+            <div className='image'>
+                <a className='image' href={'/show/' + index} onClick={props.handleClick}>
+                    <img src={birds.image} className='image'></img>
+                </a>
+            </div>
         )}
     </ul>
   )
